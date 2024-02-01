@@ -18,8 +18,9 @@ class ScreenSearch extends StatelessWidget {
             children: [
               CupertinoSearchTextField(
                 backgroundColor: Colors.grey.withOpacity(0.4),
-                prefixIcon: const Icon(CupertinoIcons.search,
-                color: Colors.grey,
+                prefixIcon: const Icon(
+                  CupertinoIcons.search,
+                  color: Colors.grey,
                 ),
                 suffixIcon: const Icon(
                   CupertinoIcons.xmark_circle_fill,
@@ -29,11 +30,11 @@ class ScreenSearch extends StatelessWidget {
               ),
               kHeight,
               //Expanded(child: const  SearchIdleWidget() ),
-              Expanded(child: const  SearchResultWidget() ),
+              Expanded(child: const SearchResultWidget()),
             ],
-            ),
+          ),
         ),
-        ),
+      ),
     );
   }
 }

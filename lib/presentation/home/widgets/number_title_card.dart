@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:netflix/core/constants.dart';
 import 'package:netflix/presentation/widgets/main_title.dart';
@@ -16,7 +15,7 @@ class NumberTitleCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const MainTitle(
-          title:"Top 10 TV Shows In India Today",
+          title: "Top 10 TV Shows In India Today",
         ),
         kHeight,
         LimitedBox(
@@ -24,13 +23,13 @@ class NumberTitleCard extends StatelessWidget {
           child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(
-                10, (index) => NumberCard(index: index,),
-              )
-
-          ),
+                10,
+                (index) => NumberCard(
+                  index: index,
+                ),
+              )),
         ),
       ],
     );
   }
 }
-

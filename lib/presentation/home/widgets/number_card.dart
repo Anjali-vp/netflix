@@ -1,4 +1,3 @@
-
 import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/core/colors/colors.dart';
@@ -14,7 +13,10 @@ class NumberCard extends StatelessWidget {
       children: [
         Row(
           children: [
-            SizedBox(width: 40,height: 150,),
+            SizedBox(
+              width: 40,
+              height: 150,
+            ),
             Container(
               height: 250,
               width: 150,
@@ -32,21 +34,21 @@ class NumberCard extends StatelessWidget {
         ),
         Positioned(
           left: 13,
-            bottom: -13,
-            child: BorderedText(
-              strokeWidth: 8.0,
-              strokeColor: KWhiteColor,
-              child: Text(
-                "${index + 1}",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 150,
-                    color: kBlackColor,
-                  decoration: TextDecoration.none,
-                  decorationColor: Colors.black,
-                ),
+          bottom: -13,
+          child: BorderedText(
+            strokeWidth: 8.0,
+            strokeColor: KWhiteColor,
+            child: Text(
+              "${index + 1}",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 150,
+                color: kBlackColor,
+                decoration: TextDecoration.none,
+                decorationColor: Colors.black,
               ),
             ),
+          ),
         ),
       ],
     );

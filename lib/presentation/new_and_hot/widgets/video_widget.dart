@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:netflix/core/colors/colors.dart';
 import 'package:netflix/core/constants.dart';
@@ -19,23 +18,23 @@ class videoWidget extends StatelessWidget {
             Knewandhottemplate,
             fit: BoxFit.cover,
           ),
-          ),
-          Positioned(
-         right: 10,
+        ),
+        Positioned(
+          right: 10,
           bottom: 0,
           child: CircleAvatar(
-          radius: 25,
-         backgroundColor: Colors.black.withOpacity(0.5),
-       child: IconButton(
-    onPressed: () {},
-    icon: const Icon(
-      Icons.volume_off,
-      color: KWhiteColor,
-      size: 30,
-    ),
-    ),
-         ),
-     ),
+            radius: 25,
+            backgroundColor: Colors.black.withOpacity(0.5),
+            child: IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.volume_off,
+                color: KWhiteColor,
+                size: 30,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

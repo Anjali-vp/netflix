@@ -18,8 +18,10 @@ final BorderRadius kRadius30 = BorderRadius.circular(30);
 
 //images
 
-const kMainImage = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJiWKzdRScI5OcRQqOu3qdMZKXY.jpg";
-const Knewandhottemplate = "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bkpPTZUdq31UGDovmszsg2CchiI.jpg";
+const kMainImage =
+    "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qJiWKzdRScI5OcRQqOu3qdMZKXY.jpg";
+const Knewandhottemplate =
+    "https://image.tmdb.org/t/p/w600_and_h900_bestv2/bkpPTZUdq31UGDovmszsg2CchiI.jpg";
 //Textstyle
 
 TextStyle kHomeTitleText = TextStyle(
@@ -27,3 +29,4 @@ TextStyle kHomeTitleText = TextStyle(
   fontWeight: FontWeight.bold,
 );
 
+const imageAppendUrl = "https://image.tmdb.org/t/p/w500";

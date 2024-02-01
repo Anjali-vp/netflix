@@ -8,13 +8,19 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
-        Text(title,
-        style: GoogleFonts.montserrat().copyWith(fontSize: 30,fontWeight: FontWeight.w900),
+        Text(
+          title,
+          style: GoogleFonts.montserrat()
+              .copyWith(fontSize: 30, fontWeight: FontWeight.w900),
         ),
-       const Spacer(),
-        Icon(Icons.cast,color: Colors.white,size: 30,),
+        const Spacer(),
+        Icon(
+          Icons.cast,
+          color: Colors.white,
+          size: 30,
+        ),
         kWidth,
         Container(
           width: 30,

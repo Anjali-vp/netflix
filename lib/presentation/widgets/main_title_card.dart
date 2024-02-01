@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:netflix/core/constants.dart';
 import 'package:netflix/presentation/widgets/main_title.dart';
@@ -6,7 +5,8 @@ import 'main_card.dart';
 
 class MainTitleCard extends StatelessWidget {
   const MainTitleCard({
-    super.key, required this.title,
+    super.key,
+    required this.title,
   });
   final String title;
 
@@ -16,7 +16,7 @@ class MainTitleCard extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         MainTitle(
-          title:title,
+          title: title,
         ),
         kHeight,
         LimitedBox(
@@ -24,13 +24,11 @@ class MainTitleCard extends StatelessWidget {
           child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(
-                10, (index) =>const MainCard(),
-              )
-
-          ),
+                10,
+                (index) => const MainCard(),
+              )),
         ),
       ],
     );
   }
 }
-
